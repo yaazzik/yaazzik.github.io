@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
-    <div class="container-fluid">
+<div class="container-fluid">
         <a class="navbar-brand" href="#">Глебов М.Д. PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
 </nav>
 
 
-<div class="row gy-5 glav">
+<div class="row gy-5 main">
     <div class="jumbotron main-title ">
         <div class="container">
-            <h1 class="display-4">Главная страница</h1>
+            <h1 class="display-4">Программирование</h1>
         </div>
     </div>
 </div>
@@ -40,47 +40,193 @@
 <div class="container-xxl">
     <div class="row gy-5">
         <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Веб технологии</h3>
-                    <p class="card-text"></p>
-                    <a href="https://yadi.sk/d/nVXG8iIgWmiesg" class="btn btn-primary">Скриншот курса OpenEDU</a>
-                    <p class="card-text"></p>
-                    <h5 class="card-title">Вариативные самостоятельные работы.</h5>
-                    <p class="card-text"></p>
-                    <a href="https://docs.google.com/document/d/13YRNyDTwTxh88LhysKD5MbY8oFu9MPCV_tRGUAwk-uM/edit?usp=sharing" class="btn btn-primary">ВСР 1.2</a>
-                    <p class="card-text"></p>
-                    <a href="https://docs.google.com/document/d/1YM1kFphkLcLZ3Sgh9yo3zwVY4bZyFNR6H-nYCvnrT1s/edit?usp=sharing" class="btn btn-primary">ВСР 2.1</a>
-                    <p class="card-text"></p>
-                    <a href="https://docs.google.com/presentation/d/1FOtpSm8xHd_Lk8V35U87AH6XoCwsJJJcXUS57DeC2R0/edit?usp=sharing" class="btn btn-primary">ВСР 3.1</a>
-                    <p class="card-text"></p>
-                    <br>
-                    <h5 class="card-title">Инвариативные самостоятельные работы.</h5>
-                    <p class="card-text"></p>
-                    <a href="https://github.com/yaazzik/Web-ISR-1" class="btn btn-primary">ИСР 1</a>
-                    <p class="card-text"></p>
-                    <a href="https://github.com/yaazzik/Web-ISR-2" class="btn btn-primary">ИСР 2</a>
-                    <p class="card-text"></p>
-                    <a href="https://github.com/yaazzik/Web-ISR-3" class="btn btn-primary">ИСР 3</a>
-                    <p class="card-text"></p>
-                    <a href="https://github.com/yaazzik/Web-ISR-4" class="btn btn-primary">ИСР 4</a>
+            <h3>ПРОГ-5</h3>
+            <div class="accordion" id="accordionProgFive">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveOne" aria-expanded="false" aria-controls="collapseFiveOne">
+                            Лабораторная работа 1
+                        </button>
+                    </h2>
+                    <div id="collapseFiveOne" class="accordion-collapse collapse" aria-labelledby="headingFiveOne" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            Написать функцию squareSequenceDigit(), где решалась бы следующая задача. Найти n-ю цифру последовательности из квадратов целых чисел: 149162536496481100121144...
+                            Например, 2-я цифра равна 4, 7-я 5, 12-я 6. Использовать операции со строками в этой задаче запрещается.
+                            <br>
+                            <br>
+                            <a href="https://github.com/python-basic/sem5-lr1-yaazzik" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveTwo" aria-expanded="false" aria-controls="collapseFiveTwo">
+                            Лабораторная работа 2
+                        </button>
+                    </h2>
+                    <div id="collapseFiveTwo" class="accordion-collapse collapse" aria-labelledby="headingFiveTwo" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            Написать реализацию функции get_weather_data(place, api_key=None), в которой необходимо получить данные о погоде с сайта https://openweathermap.org/.
+                            <br>
+                            Функция должна возвращать объект в формате JSON, включающий:
+                            <br>
+                            ☑ информацию о названии города (в контексте openweathermap),<br>
+                            ☑ код страны (2 символа),<br>
+                            ☑ широту и долготу, на которой он находится,<br>
+                            ☑ его временной зоне,<br>
+                            ☑ а также о значении температуры (как она ощущается).
+                            <br>
+                            <br>
+                            <a href="https://github.com/python-basic/sem5-lr2-yaazzik" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveThree" aria-expanded="false" aria-controls="collapseFiveThree">
+                            Лабораторная работа 3
+                        </button>
+                    </h2>
+                    <div id="collapseFiveThree" class="accordion-collapse collapse" aria-labelledby="headingFiveThree" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFour" aria-expanded="false" aria-controls="collapseFiveFour">
+                            Лабораторная работа 4
+                        </button>
+                    </h2>
+                    <div id="collapseFiveFour" class="accordion-collapse collapse" aria-labelledby="headingFiveFour" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFive" aria-expanded="false" aria-controls="collapseFiveFive">
+                            Лабораторная работа 5
+                        </button>
+                    </h2>
+                    <div id="collapseFiveFive" class="accordion-collapse collapse" aria-labelledby="headingFiveFive" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveSix" aria-expanded="false" aria-controls="collapseFiveSix">
+                            Лабораторная работа 6
+                        </button>
+                    </h2>
+                    <div id="collapseFiveSix" class="accordion-collapse collapse" aria-labelledby="headingFiveSix" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFiveSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveSeven" aria-expanded="false" aria-controls="collapseFiveSeven">
+                            Лабораторная работа 7
+                        </button>
+                    </h2>
+                    <div id="collapseFiveSeven" class="accordion-collapse collapse" aria-labelledby="headingFiveSeven" data-bs-parent="#accordionProgFive">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Компьютерный парктикум</h3>
-                    <br>
-                    <h5 class="card-title">Лабораторные работы.</h5>
-                    <p class="card-text"></p>
-                    <a href="https://docs.google.com/document/d/1StDaBOwD9edgMEYMqwffDCfth-Xu9hOI/edit" class="btn btn-primary">ЛР 3, 4</a>
-                    <p class="card-text"></p>
-                    <a href="https://yaazzik.github.io/moment_bundle/" class="btn btn-primary">ЛР 5, 6</a>
-                    <p class="card-text"></p>
-                    <a href="https://docs.google.com/document/d/1i65CbOpWj59OlzYqqsh59vcy0ZUAhzk7sscoPpKngVU/edit" class="btn btn-primary">ЛР 9, 10</a>
-                    <p class="card-text"></p>
-                    <a href="https://replit.com/@yaazzik/VioletredBarrenListener#index.php" class="btn btn-primary">ЛР 11, 12</a>
+            <h3>ПРОГ-6</h3>
+            <div class="accordion" id="accordionProgSix">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSixOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixOne" aria-expanded="false" aria-controls="collapseSixOne">
+                            Лабораторная работа 1
+                        </button>
+                    </h2>
+                    <div id="collapseSixOne" class="accordion-collapse collapse" aria-labelledby="headingSixOne" data-bs-parent="#accordionProgSix">
+                        <div class="accordion-body">
+                            Реализовать содержимое функций, декларированных в репле: https://replit.com/@zhukov/ClassicIntelligentEvaluations
+                            <br>
+                            <br>
+                            <a href="https://replit.com/@yaazzik/PROG6-1#main.py" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSixTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixTwo" aria-expanded="false" aria-controls="collapseSixTwo">
+                            Лабораторная работа 2
+                        </button>
+                    </h2>
+                    <div id="collapseSixTwo" class="accordion-collapse collapse" aria-labelledby="headingSixTwo" data-bs-parent="#accordionProgSix">
+                        <div class="accordion-body">
+                            Выполните все задания и сделайте тесты для каждой написанной функции как показано в примере.
+                            <br>
+                            Для вычисления заданий 3, 4, 5, 6, 7, 8 используйте тип данных float с точностью два знака в дробной части.
+                            <br>
+                            Часть 2. Для набора данных из лабораторной работы 1 посчитать средние значения, медианы, максимальные и минимальные значения для столбцов Offline Spend, Online Spend.
+                            <br>
+                            Результаты работы опубликовать в виде бордов на repl.it и/или Colab.
+                            <br>
+                            <br>
+                            <a href="https://replit.com/@yaazzik/sem6-t1-lr2" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSixFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixFive" aria-expanded="false" aria-controls="collapseSixFive">
+                            Лабораторная работа 5
+                        </button>
+                    </h2>
+                    <div id="collapseSixFive" class="accordion-collapse collapse" aria-labelledby="headingSixFive" data-bs-parent="#accordionProgSix">
+                        <div class="accordion-body">
+                            1. Реализовать модели степени полинома 2, 3, 5, 10, 20
+                            <br>
+                            2. Посчитать для каждой из них метрику ошибки MSE и дать характеристику того, что получилось.
+                            <br>
+                            3. Визуализировать каждую модель на графике так, чтобы это было отображено на одной координатной плоскости.
+                            <br>
+                            <br>
+                            <a href="https://colab.research.google.com/drive/1OrH0UrC-A5MncI6q_CJ677JNV28qp2fH?usp=sharing" class="btn btn-primary" target="_blank">Решение</a>                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSixSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixSix" aria-expanded="false" aria-controls="collapseSixSix">
+                            Лабораторная работа 6
+                        </button>
+                    </h2>
+                    <div id="collapseSixSix" class="accordion-collapse collapse" aria-labelledby="headingSixSix" data-bs-parent="#accordionProgSix">
+                        <div class="accordion-body">
+                            На основе кода ниже и данных, размещенных выше, реализуйте:
+                            <br>
+                            Визуализацию данных.
+                            <br>
+                            Линейную модель, которая учитывала бы только размер жилья.
+                            <br>
+                            Полиномиальную модель (степени 2 и 3), учитывающую только размер жилья.
+                            <br>
+                            Линейную модель (с помощью scikit-learn), которая учитывала бы размер жилья и количество комнат
+                            <br>
+                            Предскажите значения для двух объектах недвижимости с использованием этих трех моделей: 1650,3; 2200,4.
+                            <br>
+                            В ответе к лабораторной работе и в колабе представьте предсказанные значения стоимости объектов недвижимости для всех построенных моделей.
+                            <br>
+                            Оцените ошибку для созданных моделей. Опишите какая ошибка больше, а какая меньше и укажите причину.
+                            <br>
+                            <br>
+                            <a href="https://colab.research.google.com/drive/1K5QIhwRNG1ISWndABlutAD8GOs5XMCm6?usp=sharing" class="btn btn-primary" target="_blank">Решение</a>                            </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,13 +235,6 @@
 
 <div class="container-xxl">
 </div>
-
-
-<footer class="footer">
-    <div class="container">
-        <p>© Глебов Марк, 2ИВТ(2), 2021</p>
-    </div>
-</footer>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
