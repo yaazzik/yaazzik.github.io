@@ -44,10 +44,10 @@
     </div>
 </div>
 <!--            5 Семестр           -->
-<div class="container overflow-hidden">
+<div class="container overflow-hidden" style="margin-bottom:28px">
     <div class="row gy-5">
         <div class="col-6">
-            <h3>ПРОГ-5</h3>
+            <h3>5 Семестр</h3>
             <div class="accordion" id="accordionProgFive">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFiveOne">
@@ -214,7 +214,7 @@
         </div>
 <!--            6 Семестр           -->
         <div class="col-6">
-            <h3>ПРОГ-6</h3>
+            <h3>6 Семестр</h3>
             <div class="accordion" id="accordionProgSix">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSixOne">
@@ -299,24 +299,156 @@
                     </div>
                 </div>
             </div>
+            <br>
+<!--            7 Семестр           -->
+            <h3>7 Семестр</h3>
+            <div class="accordion" id="accordionProgSeven">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenOne" aria-expanded="false" aria-controls="collapseSevenOne">
+                            Лабораторная работа 1
+                        </button>
+                    </h2>
+                    <div id="collapseSevenOne" class="accordion-collapse collapse" aria-labelledby="headingSevenOne" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>Написание программы для численного интегрирования площади под кривой.</p>
+                            <a href="https://github.com/python-basic/sem5-lr1-yaazzik" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenTwo" aria-expanded="false" aria-controls="collapseSevenTwo">
+                            Лабораторная работа 2
+                        </button>
+                    </h2>
+                    <div id="collapseSevenTwo" class="accordion-collapse collapse" aria-labelledby="headingSevenTwo" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>Дополните файл с кодом функции integrate следующим кодом, расположенном по <a href="https://replit.com/@zhukov/sem7-task3#main.py">ссылке</a> (или <a href="https://replit.com/@zhukov/prog7-t1-lr2#main.py">тут</a>) и также проведите замеры времени вычисления для аналогичных параметров модуля timeit для кратного числа потоков и процессов (2, 4, 6).</p>
+                            <a href="https://github.com/python-basic/sem5-lr2-yaazzik" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenThree" aria-expanded="false" aria-controls="collapseSevenThree">
+                            Лабораторная работа 3
+                        </button>
+                    </h2>
+                    <div id="collapseSevenThree" class="accordion-collapse collapse" aria-labelledby="headingSevenThree" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p> Перепишите функцию integrate с использованием Cython.<br>
+                                Снова проведите замеры без потоков (аналогично предыдущим заданиям, для n_iter=10**5 и n_iter=10**6) и с потоками, процессами (аналогично для n_iter=10**6): 2, 4, 6.<br>
+                                Зафиксируйте замеры.
+                            </p>
+                            <a href="https://github.com/python-basic/sem5-lr3-yaazzik" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenFour" aria-expanded="false" aria-controls="collapseSevenFour">
+                            Лабораторная работа 4
+                        </button>
+                    </h2>
+                    <div id="collapseSevenFour" class="accordion-collapse collapse" aria-labelledby="headingSevenFour" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>Спарсить страницу https://www.herzen.spb.ru/main/structure/inst/ и создать json-файл со списком институтов, где структура файла будет такой:<br>
+                            <code>
+                                [ {"institute_name":"", "url": "", "dep_list":<br>
+                                    [<br>
+                                        {"dep_name": "кафедра", "head_name":"имя", "email":"почта"},<br>
+                                        ...<br>
+                                        ]},<br>
+                                    ...<br>
+                                ]<br>
+                            </code>
+
+                                дополнить файл с данными, организовав парсинг страниц институтов на сайте https://atlas.herzen.spb.ru/faculty.php. Спарсить список кафедр этого института и дополнить файл информацией о руководителях кафедр этого института: имя и почта. </p>
+                            <a href="https://replit.com/@yaazzik/GenuineVioletredComputeranimation#main.py" class="btn btn-primary" target="_blank">Решение</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenFive" aria-expanded="false" aria-controls="collapseSevenFive">
+                            Лабораторная работа 5
+                        </button>
+                    </h2>
+                    <div id="collapseSevenFive" class="accordion-collapse collapse" aria-labelledby="headingSevenFive" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>
+                                Дан Gist с текстом статьи сэра Тима Бернерса-Ли, оригинал тут: https://www.w3.org/DesignIssues/TimBook-old/History.html<br>
+                                Необходимо с использованием библиотеки nltk решить задачу частеречной разметки и найти 5 (пять) наиболее встречаемых частей речи в этом тексте.
+                            </p>
+                            <a href="https://colab.research.google.com/drive/1oYqxWUIDJe1h3uGQeKDF4V_ddeOQeJq2?usp=sharing" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenSix" aria-expanded="false" aria-controls="collapseSevenSix">
+                            Лабораторная работа 6
+                        </button>
+                    </h2>
+                    <div id="collapseSevenSix" class="accordion-collapse collapse" aria-labelledby="headingSevenSix" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>
+                                Спарсить страницу https://www.herzen.spb.ru/main/news/ и с использованием регулярных выражений сохранить все ссылки на новости, расположенные на этой странице.<br><br>
+
+                                Открыть каждую сохраненную страницу и спарсить основное содержимое новости<br><br>
+
+                                Обработать текст и сохранить для каждой новости:<br>
+                                1. Ключевые термины.<br>
+                                2. Ключевых персонажей, упоминавшихся в новости.<br>
+                                3. Построить изображение с облаком тегов для извлеченных ключевых терминов и персонажей.
+                            </p>
+                            <a href="https://replit.com/@yaazzik/DistinctRareBundledsoftware-API#main.py" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenSeven" aria-expanded="false" aria-controls="collapseSevenSeven">
+                            Лабораторная работа 7
+                        </button>
+                    </h2>
+                    <div id="collapseSevenSeven" class="accordion-collapse collapse" aria-labelledby="headingSevenSeven" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>
+                                На основе борда https://replit.com/@zhukov/prog7-t3-lr7#simpleapp.py реализуйте flask-приложение "Счетчик" со следующим функционалом:<br><br>
+
+                                1. по адресу localhost:port/stat - происходит инкремент счетчика и возвращается текущее его значение в виде html-содержимого;<br>
+                                2. по адресу localhost:port/about - вызывается функция hello, написанная в борде в текущей версии с добавлением имени и фамилии студента, выполнившего задание;<br>
+                                3. Счетчик инициализируется при запуске приложения и его значение хранится в переменной, не сохраняется, если приложение было остановлено.<br><br>
+
+                                "Упакуйте" приложение в докер-контейнейнер (в качестве основного образа используйте alpine-версию образа python) и опубликуйте в docker hub.
+                            </p>
+                            <a href="https://replit.com/@yaazzik/IndolentTotalMice#main.py" class="btn btn-primary" target="_blank">Решение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSevenEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenEight" aria-expanded="false" aria-controls="collapseSevenEight">
+                            Лабораторная работа 8
+                        </button>
+                    </h2>
+                    <div id="collapseSevenEight" class="accordion-collapse collapse" aria-labelledby="headingSevenEight" data-bs-parent="#accordionProgSeven">
+                        <div class="accordion-body">
+                            <p>
+                                Просмотрите ролик данной темы и выполните задание озвученное в конце ролика. Соответствующий ролику борд с кодом расположен по ссылке:<br>
+
+                                <a href="https://replit.com/@zhukov/prog7-t3-lr8#Dockerfile">https://replit.com/@zhukov/prog7-t3-lr8#Dockerfile</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(87118757, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-    });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/87118757" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>
